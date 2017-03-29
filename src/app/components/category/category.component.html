@@ -1,0 +1,34 @@
+<div class="col-md-12">
+  <article class="card wow fadeInLeft animation-delay-5 mb-4" *ngFor="let post of posts">
+             <div class="card-block" >
+               <div class="row">
+                 <div class="col-lg-6" >
+                   <img src="{{post.featured}}" alt="" class="img-responsive mb-4"> </div>
+                 <div class="col-lg-6">
+                   <h3 class="no-mt">
+                     <a [routerLink]="['/post',post._id]">{{post.title}}</a>
+                   </h3>
+                   <p class="mb-4" id="limitparagraph">{{post.body}}</p>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-lg-8">
+                   <img src="../assets/img/demo/avatar1.jpg" alt="..." class="img-circle mr-1"> by
+                   <a href="javascript:void(0)">{{post.posted_by}}</a> in
+                   <a  class="ms-tag ms-tag-info" *ngFor="let cat of post.category"><a style="color:white" [routerLink]="['/Category',cat]">{{cat}}</a></a>
+                   <span class="ml-1 hidden-xs">
+                     <i class="zmdi zmdi-time mr-05 color-info"></i>
+                     <span class="color-medium-dark">{{post.created_at}}</span>
+                   </span>
+                 </div>
+                 <div class="col-lg-4 text-right">
+                   <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-block animate-icon" [routerLink]="['/post',post._id]">Read More
+                     <i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i>
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </article>
+
+
+</div>

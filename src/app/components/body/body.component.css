@@ -4,3 +4,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+#limitparagraphcarousel{
+  height: 50px;
+  white-space:inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#meter{
+  height:430px;
+  width: 900px;
+}

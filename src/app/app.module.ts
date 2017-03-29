@@ -13,6 +13,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BodyComponent } from './components/body/body.component';
 import { PostComponent } from './components/post/post.component';
+import { CategoryComponent } from './components/category/category.component';
 
 
 
@@ -21,7 +22,8 @@ import { PostComponent } from './components/post/post.component';
 
 const appRoutes: Routes =[
  {path:'', component:BodyComponent},
- {path:'post', component:PostComponent}
+ {path:'post/:id', component:PostComponent},
+ {path:'Category/:name', component:CategoryComponent}
 
  ]
 
@@ -36,6 +38,7 @@ const appRoutes: Routes =[
     FooterComponent,
     BodyComponent,
     PostComponent,
+    CategoryComponent,
 
     ],
   imports: [
