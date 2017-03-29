@@ -1,4 +1,4 @@
-#Re-use
+# Reuse
 1.Install nodeJS first.
 2.First clone this repository into your local pc.
 3.Switch to the project Directory.
