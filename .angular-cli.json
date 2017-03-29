@@ -30,8 +30,11 @@
       ],
 
   "scripts": [
+       "../assets/js/jqueryy.js",
        "../assets/js/plugins.min.js",
-       "../assets/js/app.min.js"
+       "../assets/js/app.min.js",
+       "../assets/js/active.js"
+
 
 
     ],
