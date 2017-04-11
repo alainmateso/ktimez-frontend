@@ -1,0 +1,6 @@
+#limitparagraph{
+  height: 80px;
+  white-space:inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

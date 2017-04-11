@@ -3,9 +3,9 @@
     <div class="ms-title">
       <a href="index-2.html">
         <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
-        <span class="ms-logo animated zoomInDown animation-delay-5">M</span>
-        <h1 class="animated fadeInRight animation-delay-6">Material
-          <span>Style</span>
+        <span class="ms-logo animated zoomInDown animation-delay-5">K</span>
+        <h1 class="animated fadeInRight animation-delay-6">Ktimez
+          <span>.com</span>
         </h1>
       </a>
     </div>
@@ -62,13 +62,13 @@
       <ul class="nav navbar-nav">
 
         <li class="dropdown active">
-          <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">Home
+          <a [routerLink]="['/']" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">Home
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           </li>
 
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">Tech News
+          <a  class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page" [routerLink]="['/Category','Tech News']">Tech News
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
             </li>
@@ -79,16 +79,16 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">
-                <i class="zmdi zmdi-view-compact"></i> Android</a>
+              <a [routerLink]="['/Category','Android']">
+                <i class="zmdi zmdi-view-compact" ></i> Android</a>
             </li>
             <li>
-              <a href="#">
-                <i class="zmdi zmdi-view-compact"></i> IOS</a>
+              <a [routerLink]="['/Category','IOS']">
+                <i class="zmdi zmdi-view-compact" ></i> IOS</a>
             </li>
             <li>
-              <a href="#">
-                <i class="zmdi zmdi-view-dashboard"></i> Windows Phone</a>
+              <a [routerLink]="['/Category','Windows Phone']">
+                <i class="zmdi zmdi-view-dashboard" ></i> Windows Phone</a>
             </li>
 
 
@@ -96,27 +96,27 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Computers
+          <a href="/" class="dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Computers
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">
+              <a [routerLink]="['/Category','Windows']">
                 <i class="zmdi zmdi-view-compact"></i> Windows</a>
             </li>
             <li>
-              <a href="#">
+              <a [routerLink]="['/Category','Linux']">
                 <i class="zmdi zmdi-view-compact"></i> Linux</a>
             </li>
             <li>
-              <a href="#">
+              <a [routerLink]="['/Category','Mac Os']">
                 <i class="zmdi zmdi-view-compact"></i> Mac OS</a>
             </li>
 
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Apps
+          <a [routerLink]="['/Category','Apps']" class="dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Apps
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           </li>
@@ -124,24 +124,24 @@
 
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Tutorials
+          <a href="/" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Tutorials
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">Hacking</a>
+              <a [routerLink]="['/Category','Hacking']">Hacking</a>
             </li>
             <li>
-              <a href="#">Web Dev</a>
+              <a [routerLink]="['/Category','Web Dev']">Web Dev</a>
             </li>
             <li>
-              <a href="#">Dev Ops</a>
+              <a [routerLink]="['/Category','Dev Ops']">Dev Ops</a>
             </li>
             <li>
-              <a href="#">Troubleshooting</a>
+              <a [routerLink]="['/Category','Troubleshooting']">Troubleshooting</a>
             </li>
             <li>
-              <a href="#">How To</a>
+              <a [routerLink]="['/Category','How To']">How To</a>
             </li>
           </ul>
         </li>

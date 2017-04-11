@@ -4,12 +4,12 @@ import {PostService} from '../../services/post.service';
 import {PageService} from '../../services/page.service';
 
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css'],
+  selector: 'app-categorypage',
+  templateUrl: './categorypage.component.html',
+  styleUrls: ['./categorypage.component.css'],
   providers: [PostService,PageService]
 })
-export class CategoryComponent implements OnInit {
+export class CategorypageComponent implements OnInit {
   posts=[];
   pages: Number [];
 

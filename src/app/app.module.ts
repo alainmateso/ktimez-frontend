@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BodyComponent } from './components/body/body.component';
 import { PostComponent } from './components/post/post.component';
 import { CategoryComponent } from './components/category/category.component';
+import { PagesComponent } from './components/pages/pages.component';
+import { CategorypageComponent } from './components/categorypage/categorypage.component';
 
 
 
@@ -22,9 +24,10 @@ import { CategoryComponent } from './components/category/category.component';
 
 const appRoutes: Routes =[
  {path:'', component:BodyComponent},
+ {path:'page/:page',component:BodyComponent },
  {path:'post/:id', component:PostComponent},
- {path:'Category/:name', component:CategoryComponent}
-
+ {path:'Category/:name', component:CategoryComponent},
+ {path:'Category/:name/page/:page',component:CategorypageComponent}
  ]
 
 @NgModule({
@@ -39,6 +42,8 @@ const appRoutes: Routes =[
     BodyComponent,
     PostComponent,
     CategoryComponent,
+    PagesComponent,
+    CategorypageComponent,
 
     ],
   imports: [

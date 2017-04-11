@@ -17,7 +17,7 @@
                            <img class="media-object media-object-circle" src="{{popular.featured}}" alt="..."> </a>
                        </div>
                        <div class="media-body">
-                         <a [routerLink]="['/post',popular._id]" class="media-heading">{{popular.title}}</a>
+                         <a [routerLink]="['/post',popular.slug]" class="media-heading">{{popular.title}}</a>
                          <div class="media-footer text-small">
                            <span class="mr-1">
                              <i class="zmdi zmdi-time color-info mr-05"></i> {{popular.created_at}}</span>
