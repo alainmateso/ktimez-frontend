@@ -1,13 +1,13 @@
 # Re-use
 1.Install nodeJS first.
 
-2.First clone this repository into your local pc.
+2.Second clone this repository into your local pc.
 
 3.Switch to the project Directory.
 
 4.open command line up there
 
-5.type "npm install" and press Enter to install required nodeJS modules.
+5.type "npm install" and press Enter to install required  modules.
 
 # Frontend
 
